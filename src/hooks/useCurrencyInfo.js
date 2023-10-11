@@ -12,6 +12,7 @@ const[data,useData]=useState({});
   ,[currency])
  console.log(data);
 
+ 
   return data
 }
 
