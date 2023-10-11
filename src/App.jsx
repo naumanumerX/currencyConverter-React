@@ -1,7 +1,6 @@
-import React, { useState } from 'react'; 
-import './App.css';
+import { useState } from 'react'
+import {InputBox} from './components'
 import useCurrencyInfo from './hooks/useCurrencyInfo'
-import {InputBox} from './components';
 
 function App() {
 
@@ -37,6 +36,7 @@ function App() {
             <form
                 onSubmit={(e) => {
                     e.preventDefault();
+
                     convert()
                    
                 }}
@@ -73,7 +73,7 @@ function App() {
                     />
                 </div>
                 <button type="submit" className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg">
-                    Convert {from.toUpperCase()} to {to.toUpperCase()}
+                    CONVERT{from.toUpperCase()} to {to.toUpperCase()}
                 </button>
             </form>
         </div>
