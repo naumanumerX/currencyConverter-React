@@ -16,11 +16,7 @@ function App() {
   
     setFrom(to);
     setTo(from)
-    
-
-
   }
-
   const convert=()=>{
     setConvertedAmount(amount*currencyInfo[to])
   }
@@ -36,7 +32,6 @@ function App() {
             <form
                 onSubmit={(e) => {
                     e.preventDefault();
-
                     convert()
                    
                 }}
