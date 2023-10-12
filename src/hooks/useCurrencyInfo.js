@@ -2,7 +2,7 @@ import React from 'react'
 import { useEffect,useState } from 'react'
 
 const useCurrencyInfo = (currency) => {
-const[data,useData]=useState({});
+const[data,setData]=useState({});
   useEffect(()=>{
     fetch(`https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${currency}.json`)
     .then((res)=>res.json())
@@ -12,7 +12,7 @@ const[data,useData]=useState({});
   ,[currency])
  console.log(data);
 
- 
+
   return data
 }
 
